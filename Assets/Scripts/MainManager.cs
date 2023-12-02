@@ -5,7 +5,7 @@ using System.IO;
 public class MainManager : MonoBehaviour
 {
     // Start is called before the first frame update
-    public static MainManager Instance;
+    public static MainManager Instance { get; private set; }
     public Color TeamColor;
     private void Awake()
     {
